@@ -3,6 +3,8 @@ local itemCheck = game.Workspace.Spawns:FindFirstChildOfClass("Model")
 if itemCheck then
     itemCheck.Treasure.CanCollide = false
     itemCheck.Treasure.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/UserUnkown404/TreasureDetectedContinue/main/ContinueScript'))()
 else
-    warn("No model was found directly inside of the Instance")
+    wait(1)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/UserUnkown404/TreasureDetectedContinue/main/ContinueScript'))()
 end
